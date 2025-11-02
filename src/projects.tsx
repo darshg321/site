@@ -13,13 +13,13 @@ const Projects: Component = () => {
             title: "FancyBoard",
             description: "a hot-swappable, low-profile mechanical keyboard made from scratch",
             link: "https://github.com/darshg321/FancyBoard",
-            images: ["https://github.com/darshg321/FancyBoard/raw/main/assets/FancyBoard_Render.png"]
+            images: ["FancyBoard.png"]
         },
         {
             title: "Arcadetris",
             description: "hardware-focused led matrix 2-player Tetris arcade game built @ HC Undercity",
             link: "https://github.com/darshg321/arcadetris",
-            images: ["https://github.com/darshg321/arcadetris/raw/main/images/arcadetris.png"]
+            images: ["Arcadetris.png"]
         },
         {
             title: "Mushu",
