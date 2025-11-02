@@ -14,7 +14,7 @@
     }
 
     *, *::before, *::after {
-        cursor: url('public/cursor.png'), auto !important;
+        cursor: url('/cursor.png'), auto !important;
     }
 
     a {
