@@ -1,6 +1,5 @@
 import type {Component, ParentProps} from 'solid-js';
 import Navbar from "./components/Navbar";
-import Dir from "./components/Dir";
 import Footer from "./components/Footer";
 import {Router, Route} from "@solidjs/router";
 import home from "./home";
@@ -9,7 +8,7 @@ import projects from "./projects";
 import blog from "./blog";
 
 const Layout = (props: ParentProps) => (
-    <div class="min-h-screen flex flex-col bg-[#fafafa]">
+    <div class="min-h-screen flex flex-col bg-blue">
         {/*<Dir/>*/}
         <Navbar/>
         <main class="grow">

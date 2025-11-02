@@ -4,7 +4,7 @@ import Cube from "./components/Cube";
 
 const Home: Component = () => {
     return (
-        <div>
+        <div class={""}>
             <div class={"flex flex-col items-center px-6 py-12 max-w-3xl mx-auto"}>
                 <Title/>
                 <div class={"w-full space-y-6 text-base leading-relaxed"}>
