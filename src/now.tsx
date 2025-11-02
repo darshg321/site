@@ -10,30 +10,30 @@ const Now: Component = () => {
     };
 
     return (
-        <div class={"flex flex-col items-center"}>
-            <div class={"flex flex-col w-150"}>
-                <div class={"flex flex-row items-center justify-center p-20"}>
+        <div class={"flex flex-col items-center px-6 py-12 max-w-3xl mx-auto"}>
+            <div class={"flex flex-col w-full"}>
+                <div class={"flex flex-row items-center justify-center py-12 space-x-6"}>
                     <img
                         src={"/speaker.svg"}
                         onClick={playPronunciation}
-                        class="cursor-pointer hover:opacity-70"
+                        class="cursor-pointer hover:opacity-70 transition-opacity"
                         alt="Play pronunciation"
-                        width={"5%"}
-                        height={"5%"}
+                        width={32}
+                        height={32}
                     />
                     <div class={"flex flex-col"}>
-                        <p>now</p>
-                        <p>/nou/</p>
-                        <p>key site component</p>
+                        <p class="text-4xl font-medium">now</p>
+                        <p class="text-sm text-gray-500 font-mono">/nou/</p>
+                        <p class="text-sm text-gray-600">key site component</p>
                     </div>
                 </div>
-                <div class={"border-l-4 border-gray-400 pl-4 mb-8"}>
-                    <p class={"italic text-gray-600"}>
+                <div class={"border-l-4 border-[#fe8839] pl-6 mb-8"}>
+                    <p class={"italic text-gray-600 text-base"}>
                         a person's current focus; what you'd tell a friend you hadn't seen in a year.</p>
                 </div>
             </div>
-            <div class={"w-150 mt-8 pt-8 border-t border-gray-300"}>
-                <p>still in Mississauga (boring). currently focused on studying for the SAT (1530??), learning chemistry
+            <div class={"w-full mt-8 pt-8 border-t border-gray-200"}>
+                <p class="text-base text-gray-700 leading-relaxed">still in Mississauga (boring). currently focused on studying for the SAT (1530??), learning chemistry
                     for the Canadian Chemistry Olympiad, making hardware projects, and generally just doing too many
                     things</p>
             </div>

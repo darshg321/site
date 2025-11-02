@@ -19,11 +19,11 @@ const Blog: Component = () => {
         {date: "2/24/2025", text: "aw man"}]
 
     return (
-        <div class={"flex flex-col items-center p-10"}>
+        <div class={"flex flex-col items-center px-6 py-12 max-w-2xl mx-auto space-y-6"}>
             {postData.map((post) => (
-                <div class="p-6 items-center border-1 rounded-2xl space-y-2">
-                    <p class="text-xl">{post.text}</p>
-                    <p class="text-xs">{post.date}</p>
+                <div class="w-full p-6 border border-gray-200 rounded-lg bg-white hover:border-[#ed344f] transition-colors space-y-3">
+                    <p class="text-lg text-gray-800">{post.text}</p>
+                    <p class="text-sm text-gray-500">{post.date}</p>
                 </div>
             ))}
         </div>

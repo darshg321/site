@@ -9,12 +9,12 @@ import projects from "./projects";
 import blog from "./blog";
 
 const Layout = (props: ParentProps) => (
-    <div class="min-h-screen flex flex-col">
-        <Dir/>
+    <div class="min-h-screen flex flex-col bg-[#fafafa]">
+        {/*<Dir/>*/}
         <Navbar/>
-        <div class="grow">
+        <main class="grow">
             {props.children}
-        </div>
+        </main>
         <Footer/>
     </div>
 )
@@ -22,16 +22,12 @@ const Layout = (props: ParentProps) => (
 const App: Component = () => {
     return (
         <div class="h-full w-full">
-            {/*<Dir />*/}
-            {/*<Title />*/}
-            {/*<Navbar />*/}
             <Router root={Layout}>
                 <Route path={"/"} component={home}/>
                 <Route path={"/now"} component={now}/>
                 <Route path={"/projects"} component={projects}/>
                 <Route path={"/blog"} component={blog}/>
             </Router>
-            {/*<Footer />*/}
         </div>
     );
 };

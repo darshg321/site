@@ -1,15 +1,43 @@
 import type { Component } from 'solid-js';
+import { createSignal, onMount, onCleanup } from 'solid-js';
 
 const Title: Component = () => {
+    const [fontIndex, setFontIndex] = createSignal(0);
+    
+    const fonts = [
+        'Georgia, serif',
+        '"Times New Roman", Times, serif',
+        'Arial, sans-serif',
+        'Verdana, sans-serif',
+        '"Courier New", Courier, monospace',
+        '"Comic Sans MS", cursive',
+        '"Trebuchet MS", sans-serif',
+        '"Impact", fantasy',
+        '"Lucida Console", monospace',
+        '"Brush Script MT", cursive',
+    ];
+
+    let intervalId: number;
+    
+    onMount(() => {
+        intervalId = window.setInterval(() => {
+            setFontIndex((prev) => (prev + 1) % fonts.length);
+        }, 500);
+    });
+    
+    onCleanup(() => {
+        if (intervalId) window.clearInterval(intervalId);
+    });
+
     return (
-        <div class={"flex flex-row items-center justify-center min-h-40 space-x-10"}>
+        <div class={"flex flex-row items-center justify-center py-20 space-x-4"}>
             <div class={"text-4xl"}>
                 <h1>hi, im </h1>
             </div>
-            <div class={"text-6xl bg-cyan-300 italic font-"}>
+            <div class={"text-6xl italic font-medium text-[#fe8839] transition-all duration-500"} style={{ "font-family": fonts[fontIndex()] }}>
                 <h1>darsh</h1>
             </div>
-            <div class={"text-6xl text-[#ec3a50]"}>
+            <div class={"text-6xl text-[#ed344f]"}>
                 <h1>!!</h1>
             </div>
         </div>

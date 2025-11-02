@@ -24,15 +24,15 @@ const Projects: Component = () => {
     ]
 
     return (
-        <div class={"grid grid-cols-4"}>
+        <div class={"grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-12 max-w-5xl mx-auto"}>
             {projectData.map((project) => (
-                <div class={"m-4 p-4 w-60 text-center"}>
-                    <p class={"text-2xl"}>{project.title}</p>
+                <div class={"bg-white border border-gray-200 rounded-lg p-6 hover:border-[#fe8839] transition-colors"}>
+                    <h2 class={"text-2xl font-medium mb-3 text-[#ed344f]"}>{project.title}</h2>
                     {project.images.map((img) => (
-                        <img src={img}/>
+                        <img src={img} class="w-full rounded mb-4 object-cover"/>
                     ))}
-                    <p class={"text-xm w-50"}>{project.description}</p>
-                    <a href={project.link} class={"text-xm text-blue-700"}>github!!</a>
+                    <p class={"text-base text-gray-700 mb-4 leading-relaxed"}>{project.description}</p>
+                    <a href={project.link} class={"text-sm text-[#fe8839] hover:text-[#ed344f] font-medium"}>github →</a>
                 </div>
             ))}
         </div>

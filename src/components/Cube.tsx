@@ -1,7 +1,7 @@
-import { Component } from "solid-js";
+import {Component} from "solid-js";
 import "./Cube.css";
 
-const Cube: Component<{}> = (props) => {
+const Cube: Component = (props) => {
     return (
         <div class={"cube"}>
             <div class={"top"}></div>
