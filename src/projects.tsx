@@ -21,12 +21,12 @@ const Projects: Component = () => {
             link: "https://github.com/darshg321/arcadetris",
             images: ["Arcadetris.png"]
         },
-        {
-            title: "Mushu",
-            description: "2025 FRC robot, ranked #13/130 in Ontario, seeding #7 in our worlds division",
-            link: undefined,
-            images: ["https://github.com/darshg321/arcadetris/raw/main/images/arcadetris.png"]
-        },
+        // {
+        //     title: "Mushu",
+        //     description: "2025 FRC robot, ranked #13/130 in Ontario, seeding #7 in our worlds division",
+        //     link: undefined,
+        //     images: ["https://github.com/darshg321/arcadetris/raw/main/images/arcadetris.png"]
+        // },
     ]
 
     return (
