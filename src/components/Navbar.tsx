@@ -1,8 +1,9 @@
-import type { Component } from 'solid-js';
+import type {Component} from 'solid-js';
 
 const Navbar: Component = () => {
     return (
-        <div>
+        <div class={"flex flex-row items-center justify-center space-x-10 text-xl"}>
+            <a href={"/"}>about</a>
             <a href={"/projects"}>projects</a>
             <a href={"/blog"}>blog</a>
             <a href={"/now"}>now</a>
