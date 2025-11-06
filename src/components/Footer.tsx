@@ -28,7 +28,7 @@ const Footer: Component = () => {
                 {commit() && (
                     <a
                         href={`https://github.com/darshg321/site/commit/${commit()}`}
-                        class="text-magenta"
+                        className="text-magenta"
                     >
                         {commit()?.slice(0, 7)} {/* short SHA */}
                     </a>
@@ -36,9 +36,10 @@ const Footer: Component = () => {
             </Suspense>
 
             <p>inspired by:</p>
-            <a href="https://phthallo.com" class="text-magenta">phthallo</a>
-            <a href="https://aconlin.com" class="text-magenta">acon</a>
-            <a href="https://nownownow.com/about" class="text-magenta">now</a>
+            <a href="https://phthallo.com" className="text-magenta">phthallo</a>
+            <a href="https://aconlin.com" className="text-magenta">acon</a>
+            <a href="https://bomberfish.ca/" className="text-magenta">bomberfish</a>
+            <a href="https://nownownow.com/about" className="text-magenta">now</a>
         </footer>
     );
 };
