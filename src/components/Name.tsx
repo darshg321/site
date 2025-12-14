@@ -1,9 +1,9 @@
-import type { Component } from 'solid-js';
-import { createSignal, onMount, onCleanup } from 'solid-js';
+import type {Component} from 'solid-js';
+import {createSignal, onMount, onCleanup} from 'solid-js';
 
-const Title: Component = () => {
+const Name: Component = () => {
     const [fontIndex, setFontIndex] = createSignal(0);
-    
+
     const fonts = [
         'Georgia, serif',
         '"Times New Roman", Times, serif',
@@ -18,13 +18,13 @@ const Title: Component = () => {
     ];
 
     let intervalId: number;
-    
+
     onMount(() => {
         intervalId = window.setInterval(() => {
             setFontIndex((prev) => (prev + 1) % fonts.length);
         }, 500);
     });
-    
+
     onCleanup(() => {
         if (intervalId) window.clearInterval(intervalId);
     });
@@ -34,7 +34,8 @@ const Title: Component = () => {
             <div class={"text-4xl"}>
                 <h1>hi, im </h1>
             </div>
-            <div class={"text-6xl italic font-medium text-[#fe8839] transition-all duration-500"} style={{ "font-family": fonts[fontIndex()] }}>
+            <div class={"text-6xl italic font-medium text-[#fe8839] transition-all duration-500"}
+                 style={{"font-family": fonts[fontIndex()]}}>
                 <h1>darsh</h1>
             </div>
             <div class={"text-6xl text-[#ed344f]"}>
@@ -44,4 +45,4 @@ const Title: Component = () => {
     );
 };
 
-export default Title;
+export default Name;

@@ -33,9 +33,12 @@ const Now: Component = () => {
                 </div>
             </div>
             <div class={"w-full mt-8 pt-8 border-t border-gray-200"}>
-                <p class="text-base text-gray-700 leading-relaxed">still in Mississauga (boring). currently focused on studying for the SAT (1530??), learning chemistry
-                    for the Canadian Chemistry Olympiad, making hardware projects, and generally just doing too many
-                    things</p>
+                <p class="text-base text-gray-700 leading-relaxed">
+                    currently making hardware projects, I've been obsessed with quadrupeds and actuators, and my next
+                    two projects will be a table-top hopping quadruped leg and a custom actuator. besides tech I've been
+                    playing a lot of badminton, and studying for MUN, and always being on the lookout for more things to
+                    do.
+                </p>
             </div>
         </div>
     );

@@ -9,21 +9,27 @@ type Project = {
 
 const Projects: Component = () => {
     const projectData: Array<Project> = [
+        // {
+        //     title: "FancyBoard",
+        //     description: "a hot-swappable, low-profile mechanical keyboard made from scratch",
+        //     link: "https://github.com/darshg321/FancyBoard",
+        //     images: ["FancyBoard.png"]
+        // },
         {
-            title: "FancyBoard",
-            description: "a hot-swappable, low-profile mechanical keyboard made from scratch",
-            link: "https://github.com/darshg321/FancyBoard",
-            images: ["FancyBoard.png"]
+            title: "TopArm",
+            description: "fusion of a top hat and robotic arm",
+            link: "https://github.com/darshg321/TopArm",
+            images: ["TopArm.png"]
         },
         {
             title: "Arcadetris",
-            description: "hardware-focused led matrix 2-player Tetris arcade game built @ HC Undercity",
+            description: "2-player Tetris console built @ HC Undercity",
             link: "https://github.com/darshg321/arcadetris",
             images: ["Arcadetris.png"]
         },
         {
             title: "Mushu",
-            description: "2025 FRC robot, ranked #13/130 in Ontario, seeding #7 in our worlds division",
+            description: "2025 FRC robot, ranking #13/130 in Ontario",
             link: undefined,
             images: ["Mushu.png"]
         },
@@ -35,7 +41,7 @@ const Projects: Component = () => {
                 <div class={"bg-white border-2 border-magenta rounded-lg p-6 hover:border-orange transition-colors"}>
                     <h2 class={"text-2xl font-medium mb-3 text-magenta"}>{project.title}</h2>
                     {project.images.map((img) => (
-                        <img src={img} alt={project.title} class="w-full h-auto rounded mb-4 object-cover"/>
+                        <img src={img} alt={project.title} class="w-60 h-60 rounded mb-4 object-cover"/>
                     ))}
                     <p class={"text-base text-gray-700 mb-4 leading-relaxed"}>{project.description}</p>
                     <a href={project.link}
