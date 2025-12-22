@@ -127,7 +127,7 @@ const Blackjack: Component = () => {
         const profit = bank() - 500;
         return (
             <div class="flex flex-col items-center text-sm font-mono">
-                <p class="text-lg mb-1">🏁 Cash Out</p>
+                <p class="text-lg mb-1">Cash Out</p>
                 <p>Rounds: {s.rounds}</p>
                 <p>Wins: {s.wins} | Losses: {s.losses} | Pushes: {s.pushes}</p>
                 <p>Win rate: {wr}%</p>
@@ -149,7 +149,7 @@ const Blackjack: Component = () => {
             <div class="flex flex-col items-center justify-center w-full md:w-2/3 space-y-3">
                 {/* Dealer */}
                 <div class="flex flex-col items-center">
-                    <p class="text-xl text-magenta uppercase mb-1">dealer</p>
+                    <p class="text-xl text-magenta uppercase mb-1 font-bold">dealer</p>
                     <div class="flex gap-1">
                         {dealer().map(c => (
                             <div
@@ -163,7 +163,7 @@ const Blackjack: Component = () => {
 
                 {/* Player */}
                 <div class="flex flex-col items-center">
-                    <p class="text-xl text-orange uppercase mb-1">you</p>
+                    <p class="text-xl text-orange uppercase mb-1 font-bold">you</p>
                     <div class="flex gap-1">
                         {player().map(c => (
                             <div
@@ -179,7 +179,7 @@ const Blackjack: Component = () => {
             {/* Right Side */}
             <div class="flex flex-col items-center w-full md:w-1/3 space-y-2 text-center">
                 <p class="text-sm">
-                    💰 bank: <span class="font-mono text-yellow-green">${bank()}</span>
+                    bank: <span class="font-mono text-yellow-green">${bank()}</span>
                 </p>
 
                 {!inRound() && !over() && (

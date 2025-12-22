@@ -149,10 +149,10 @@ export const Snake: Component = () => {
     const cells = Array.from({length: GRID_SIZE * GRID_SIZE}, (_, i) => i);
 
     const statusText = () => {
-        if (gameOver()) return "you crashed 💀";
+        if (gameOver()) return "you crashed :(";
         if (!running() && score() === 0) return "press space or ▶ to start";
         if (!running()) return "paused ⏸";
-        return "slither on 🐍";
+        return "slither on !!";
     };
 
     return (
@@ -160,7 +160,7 @@ export const Snake: Component = () => {
             class="flex flex-col md:flex-row items-center justify-between w-full max-w-3xl bg-white rounded-lg p-4 space-y-3 md:space-y-0 md:space-x-6">
             {/* Left: Board */}
             <div class="flex flex-col items-center justify-center w-full md:w-2/3 space-y-3">
-                <p class="text-xl text-magenta uppercase mb-1 tracking-wide">snake</p>
+                <p class="text-xl text-magenta uppercase mb-1 tracking-wide font-bold">snake</p>
 
                 <div
                     ref={boardRef}
@@ -196,9 +196,10 @@ export const Snake: Component = () => {
             </div>
 
             {/* Right: Controls */}
-            <div class="flex flex-col items-center w-full md:w-1/3 space-y-2 text-center">
+            <div
+                class="flex flex-col items-center w-full md:w-1/3 space-y-2 text-center">
                 <p class="text-sm">
-                    🧮 score:{" "}
+                    score:{" "}
                     <span class="font-mono text-yellow-green">{score()}</span>
                 </p>
                 <p class="text-xs font-mono text-gray-500">

@@ -37,6 +37,7 @@
     --color-green: #00ad45;
     --color-yellow-green: #8cc229;
     --color-black: #0e1111;
+    --color-gray: #F2F2F2;
 }
 
 @layer components {
