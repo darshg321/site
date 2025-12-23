@@ -24,8 +24,8 @@ const Blog: Component = () => {
     ];
 
     return (
-        <div class="flex flex-col items-center p-8">
-            <p class="text-orange text-4xl italic mb-10">blog !!</p>
+        <div class="flex flex-col items-center p-4 md:p-8">
+            <p class="text-orange text-2xl md:text-4xl italic mb-10">blog !!</p>
 
             <div class="grid gap-8 max-w-3xl w-full">
                 {postData.map((post) => (

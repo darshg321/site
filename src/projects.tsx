@@ -42,7 +42,7 @@ const Projects: Component = () => {
                 <div class={"bg-white border-2 border-magenta rounded-lg p-6 hover:border-orange transition-colors"}>
                     <h2 class={"text-2xl font-medium mb-3 text-magenta"}>{project.title}</h2>
                     {project.images.map((img) => (
-                        <img src={img} alt={project.title} class="w-60 h-60 rounded mb-4 object-cover"/>
+                        <img src={img} alt={project.title} class="w-full max-w-60 h-60 rounded mb-4 object-cover"/>
                     ))}
                     <p class={"text-base text-gray-700 mb-4 leading-relaxed"}>{project.description}</p>
                     <a href={project.link}

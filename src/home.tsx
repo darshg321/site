@@ -47,7 +47,7 @@ const Home: Component = () => {
                     {/*    </div>*/}
                     {/*</div>*/}
                 </div>
-                <p class={"text-magenta text-2xl pt-6 font-semibold"}>play a few games !!</p>
+                <p class={"text-magenta text-xl md:text-2xl pt-6 font-semibold"}>play a few games !!</p>
 
                 <Games/>
             </div>

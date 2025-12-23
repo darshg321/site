@@ -20,7 +20,7 @@ const Footer: Component = () => {
     const [commit] = createResource(fetchLatestCommit);
 
     return (
-        <footer class="flex flex-row justify-center items-center space-x-6 py-6 px-4 border-t border-pink text-sm">
+        <footer class="flex flex-row flex-wrap justify-center items-center gap-x-3 gap-y-2 py-6 px-4 border-t border-pink text-sm">
             <p>made with procrastination !! </p>
             <p>on ver:</p>
 
@@ -28,7 +28,7 @@ const Footer: Component = () => {
                 {commit() && (
                     <a
                         href={`https://github.com/darshg321/site/commit/${commit()}`}
-                        className="text-magenta"
+                        class="text-magenta"
                     >
                         {commit()?.slice(0, 7)} {/* short SHA */}
                     </a>
@@ -36,10 +36,10 @@ const Footer: Component = () => {
             </Suspense>
 
             <p>inspired by:</p>
-            <a href="https://phthallo.com" className="text-magenta">phthallo</a>
-            <a href="https://aconlin.com" className="text-magenta">acon</a>
-            <a href="https://bomberfish.ca/" className="text-magenta">bomberfish</a>
-            <a href="https://nownownow.com/about" className="text-magenta">now</a>
+            <a href="https://phthallo.com" class="text-magenta">phthallo</a>
+            <a href="https://aconlin.com" class="text-magenta">acon</a>
+            <a href="https://bomberfish.ca/" class="text-magenta">bomberfish</a>
+            <a href="https://nownownow.com/about" class="text-magenta">now</a>
         </footer>
     );
 };

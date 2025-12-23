@@ -11,10 +11,10 @@ const Games: Component = () => {
     const prev = () => setIndex((index() - 1 + games.length) % games.length);
 
     return (
-        <div class="flex items-center justify-center mt-8 space-x-4 border-2 border-pink rounded-xl">
+        <div class="flex items-center justify-center mt-8 space-x-2 md:space-x-4 border-2 border-pink rounded-xl overflow-hidden">
             {/* Left Button */}
             <button
-                class="text-2xl font-bold px-3 py-1 rounded hover:bg-blue/20 transition"
+                class="text-2xl font-bold px-2 md:px-3 py-1 rounded hover:bg-blue/20 transition"
                 onClick={prev}
             >
                 ←
@@ -22,9 +22,8 @@ const Games: Component = () => {
 
             {/* Game Container */}
             <div
-                class="flex items-center justify-center text-center transition-all duration-300 overflow-hidden"
+                class="flex items-center justify-center text-center transition-all duration-300 overflow-hidden w-full max-w-[740px]"
                 style={{
-                    width: "740px",
                     "min-height": "320px",
                 }}
             >
@@ -35,7 +34,7 @@ const Games: Component = () => {
 
             {/* Right Button */}
             <button
-                class="text-2xl font-bold px-3 py-1 rounded hover:bg-blue/20 transition"
+                class="text-2xl font-bold px-2 md:px-3 py-1 rounded hover:bg-blue/20 transition"
                 onClick={next}
             >
                 →

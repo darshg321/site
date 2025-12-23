@@ -30,15 +30,15 @@ const Name: Component = () => {
     });
 
     return (
-        <div class={"flex flex-row items-center justify-center py-20 space-x-4"}>
-            <div class={"text-4xl font-bold"}>
+        <div class={"flex flex-row items-center justify-center py-12 md:py-20 space-x-2 md:space-x-4"}>
+            <div class={"text-2xl md:text-4xl font-bold"}>
                 <h1>hi, im </h1>
             </div>
-            <div class={"text-6xl italic font-bold text-orange transition-all duration-500"}
+            <div class={"text-4xl md:text-6xl italic font-bold text-orange transition-all duration-500"}
                  style={{"font-family": fonts[fontIndex()]}}>
                 <h1>darsh</h1>
             </div>
-            <div class={"text-6xl text-magenta font-bold"}>
+            <div class={"text-4xl md:text-6xl text-magenta font-bold"}>
                 <h1>!!</h1>
             </div>
         </div>

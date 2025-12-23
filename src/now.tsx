@@ -12,7 +12,7 @@ const Now: Component = () => {
     return (
         <div class={"flex flex-col items-center px-6 py-12 max-w-3xl mx-auto"}>
             <div class={"flex flex-col w-full"}>
-                <div class={"flex flex-row items-center justify-center py-12 space-x-6"}>
+                <div class={"flex flex-row items-center justify-center py-8 md:py-12 space-x-4 md:space-x-6"}>
                     <img
                         src={"/speaker.svg"}
                         onClick={playPronunciation}
@@ -22,7 +22,7 @@ const Now: Component = () => {
                         height={32}
                     />
                     <div class={"flex flex-col"}>
-                        <p class="text-4xl font-medium">now</p>
+                        <p class="text-2xl md:text-4xl font-medium">now</p>
                         <p class="text-sm text-gray-500 font-mono">/nou/</p>
                         <p class="text-sm text-gray-600">key site component</p>
                     </div>
